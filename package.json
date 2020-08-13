@@ -1,0 +1,16 @@
+{
+  "name": "simple_server",
+  "version": "1.0.0",
+  "description": "My simple web server",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hornet",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>minesweep</title>
+
+</head>
+
+<body>
+  <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js" SameSite=None></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" SameSite=None></script>
+  <!-- sterge, you are not allowed to look at this-->
+  <h1>Multidimensional Minesweeper</h1>
+
+  <script type="text/javascript" src="minesweep.js"></script>
+  <canvas id="thecanvas" onmousedown = "getPosition()" width="1500" height="300" style="border:1px solid #000000;"></canvas>
+  <button type="button" onclick = 'socket.emit("reset");'>NEW BOARD</button>
+  <p>
+    Right click to flag and question mark
+  </p>
+  <p>
+    Middle mouse to highlight adjacent squares
+  </p>
+  <p>
+    Sterge, complete the game to receive your number   
+  </p>
+  <p></p>
+  <p>
+    Thank to Xandu for idea and Chonj for playtest beta alpha gamma test
+  </p>
+</body>
+</html>
